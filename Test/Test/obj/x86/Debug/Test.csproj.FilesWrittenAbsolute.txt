@@ -1,0 +1,5 @@
+/Users/Kevin/Projects/Test/Test/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/Kevin/Projects/Test/Test/bin/Debug/Test.exe.mdb
+/Users/Kevin/Projects/Test/Test/bin/Debug/Test.exe
+/Users/Kevin/Projects/Test/Test/obj/x86/Debug/Test.exe
+/Users/Kevin/Projects/Test/Test/obj/x86/Debug/Test.exe.mdb
