@@ -2,6 +2,7 @@ using System;
 using System.ServiceModel;
 using System.ServiceModel.Syndication;
 using System.Xml;
+using System.Net;
 
 namespace Test
 {
@@ -22,6 +23,8 @@ namespace Test
 				}
 				Console.WriteLine ();
 			}
+
+			HttpWebRequest test;
 		}
 	}
 }

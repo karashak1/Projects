@@ -1,0 +1,5 @@
+/Users/Kevin/Projects/Thesis/DataCollection/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/Kevin/Projects/Thesis/DataCollection/bin/Debug/DataCollection.dll.mdb
+/Users/Kevin/Projects/Thesis/DataCollection/bin/Debug/DataCollection.dll
+/Users/Kevin/Projects/Thesis/DataCollection/obj/Debug/DataCollection.dll
+/Users/Kevin/Projects/Thesis/DataCollection/obj/Debug/DataCollection.dll.mdb
