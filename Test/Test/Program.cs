@@ -3,6 +3,9 @@ using System.ServiceModel;
 using System.ServiceModel.Syndication;
 using System.Xml;
 using System.Net;
+using System.IO;
+using System.Text;
+using System.Web;
 
 namespace Test
 {
@@ -19,12 +22,21 @@ namespace Test
 				string summery = item.Summary.Text;
 				Console.WriteLine (subject);
 				foreach (SyndicationLink link in item.Links) {
-					Console.WriteLine (link.Uri.ToString());
+					var output = link.Uri.ToString ().Split ('&');
+					foreach (var part in output)
+						if (part.Contains ("url=http"))
+							Console.WriteLine (part.Split('=')[1]);
 				}
 				Console.WriteLine ();
 			}
 
-			HttpWebRequest test;
+			var request = (HttpWebRequest)WebRequest.Create ("http://cs.newpaltz.edu/~plotkinm/2012Grad/Final/api/Cities.php?term");
+			using (var response = (HttpWebResponse)request.GetResponse ()) {
+				var output = new StreamReader(response.GetResponseStream (), Encoding.UTF8);
+				Console.WriteLine (output.ReadToEnd ());
+
+
+			}
 		}
 	}
 }
